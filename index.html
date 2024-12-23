@@ -1,0 +1,187 @@
+<html><head><base href="." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bret Padres Consulting - Cybersecurity Experts</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #0066cc;
+            --accent: #ff9900;
+            --light: #f5f5f5;
+            --dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="%23003366"/><path d="M0 0h1920v1080H0z" fill="%23003366" fill-opacity="0.8"/><circle cx="960" cy="540" r="400" fill="none" stroke="%230066cc" stroke-width="2"/><path d="M760 340h400v400H760z" fill="none" stroke="%230066cc" stroke-width="2"/></svg>');
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .services {
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #e68a00;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://bretpadres.com" class="logo">Bret Padres Consulting</a>
+            <div class="nav-links">
+                <a href="https://bretpadres.com/services">Services</a>
+                <a href="https://bretpadres.com/about">About</a>
+                <a href="https://bretpadres.com/contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero animate-fade-in">
+        <h1>Expert Cybersecurity Consulting</h1>
+        <p>Helping clients with over 35 years of industry-leading expertise</p>
+        <a href="https://bretpadres.com/contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="services">
+        <div class="service-card animate-fade-in">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="var(--primary)" stroke-width="2"/>
+                <path d="M19 12C19 16.4183 15.4183 20 11 20C6.58172 20 3 16.4183 3 12C3 7.58172 6.58172 4 11 4C15.4183 4 19 7.58172 19 12Z" stroke="var(--primary)" stroke-width="2"/>
+            </svg>
+            <h3>Digital Forensics</h3>
+            <p>Advanced digital investigation techniques to uncover and analyze electronic evidence with precision and expertise.</p>
+        </div>
+
+        <div class="service-card animate-fade-in">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--primary)" stroke-width="2"/>
+                <path d="M12 8V12L15 15" stroke="var(--primary)" stroke-width="2"/>
+            </svg>
+            <h3>Incident Response</h3>
+            <p>Rapid and effective response to cyber incidents, minimizing damage and restoring operations quickly and securely.</p>
+        </div>
+
+        <div class="service-card animate-fade-in">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 21V10L12 5L18 10V21" stroke="var(--primary)" stroke-width="2"/>
+                <path d="M10 14V21H14V14H10Z" stroke="var(--primary)" stroke-width="2"/>
+                <path d="M4 21H20" stroke="var(--primary)" stroke-width="2"/>
+            </svg>
+            <h3>Expert Witness & Cyber Litigation Support</h3>
+            <p>Professional testimony and consulting services for cyber-related legal proceedings, backed by years of industry experience.</p>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.animate-fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                observer.observe(element);
+            });
+        });
+    </script>
+</body></html>
